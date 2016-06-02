@@ -3,5 +3,6 @@ node_js:
   - "4.2"
 before_script:
   - bower i
-script: gulp build
-        tree -dA build
+script:
+  - gulp build
+  - tree -dA build
