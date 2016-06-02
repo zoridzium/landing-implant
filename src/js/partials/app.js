@@ -1,6 +1,6 @@
 function out1212(){
     var curTime = new Date();
-    console.log(curTime.getTime);
+    console.lg(curTime.getTime);
 }
 
 out1212();
