@@ -4,3 +4,4 @@ node_js:
 before_script:
   - bower i
 script: gulp build
+        tree -dA build
