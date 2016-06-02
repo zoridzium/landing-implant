@@ -1,5 +1,5 @@
 function alrt(msg) {
-    alert(msg);
+    console.log(msg);
 }
 
-alrt();
+alrt('123');
