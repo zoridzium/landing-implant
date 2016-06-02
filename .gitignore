@@ -6,7 +6,7 @@ build
 components
 coverage
 *.orig
-.idea
+.idea/
 sandbox
 test/out-fixtures/*
 test/watch-*.txt
