@@ -1,0 +1,44 @@
+body {
+  font-size: 1em;
+  text-align: center;
+}
+
+header {
+  font-size: 1em;
+  color: darkred;
+}
+
+header {
+  background-color: #2D9FD8;
+}
+
+header ul {
+  margin: 0;
+  padding: 10px;
+}
+
+header ul li{
+  display: inline-block;
+}
+
+header ul li a {
+  color: white;
+  padding: 10px;
+  font-stretch: ultra-condensed;
+  font-weight: 600;
+  text-decoration: none;
+  font-family: MetaPro;
+
+}
+
+.content {
+  color: black;
+  text-align: justify;
+  max-width: 550px;
+  display: inline-block;
+}
+
+.uk-navbar-nav, .uk-navbar-nav > li>a:hover, .uk-navbar-nav > li.uk-active > a {
+  background-color: #2D9FD8;
+
+}

@@ -1,0 +1,31 @@
+{
+  "name": "landing-implant",
+  "description": "This project contains proprietary code of landing",
+  "main": "index.js",
+  "authors": [
+    "Alfamed Ukraine"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "landing",
+    "implant",
+    "development",
+    "stomatology",
+    "dent",
+    "dental"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.css": "*",
+    "uikit": "*",
+    "jquery": "2.*",
+    "isotope": "^3.0.0"
+  }
+}
