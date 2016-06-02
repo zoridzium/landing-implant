@@ -6,4 +6,4 @@ before_script:
   - bower i
 script:
   - gulp build
-  - tree -dA build
+  - tree -dA
