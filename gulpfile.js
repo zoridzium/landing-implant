@@ -13,6 +13,8 @@ var gulp = require('gulp'),
     rimraf = require('rimraf'),
     browserSync = require("browser-sync"),
     reload = browserSync.reload,
+    bower = require('gulp-bower'),
+    mainBowerFiles = require('main-bower-files'),
     codeStylish = require('jshint-stylish'),
     jshint = require("gulp-jshint"); //отслеживание ошибкок в js
 
@@ -28,6 +30,7 @@ var path = {
         html: 'src/*.html', //Синтаксис src/*.html говорит gulp что мы хотим взять все файлы с расширением .html
         js: 'src/js/main.js',//В стилях и скриптах нам понадобятся только main файлы
         jshint: 'src/js/**/*.js',
+        lib: 'src/lib/',
         style: 'src/style/main.scss',
         img: 'src/img/**/*.*', //Синтаксис img/**/*.* означает - взять все файлы всех расширений из папки и из вложенных каталогов
         fonts: 'src/fonts/**/*.*'
@@ -110,6 +113,15 @@ gulp.task('deps:build', function() {
         .pipe(gulp.dest(path.build.css))
     gulp.src(['bower_components/uikit/fonts/*.*']) //uikit fonts
         .pipe(gulp.dest('src/fonts'))
+});
+
+gulp.task('bower:install', function() {
+    return bower();
+});
+
+gulp.task("main-bower-files:build", function(){
+    return gulp.src(mainBowerFiles())
+        .pipe(gulp.dest(path.src.lib))
 });
 
 gulp.task('build', [
