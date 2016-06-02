@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://git.nac.in.ua/Alfamed/landing-implant.git"
+    "url": "git@github.com:alfamed/landing-implant.git"
   },
   "keywords": [
     "landing",
