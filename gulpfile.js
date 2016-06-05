@@ -107,7 +107,7 @@ gulp.task('fonts:build', function() {
 });
 
 gulp.task('deps:build', function() {
-    gulp.src(['bower_components/jquery/dist/jquery.min.js','bower_components/uikit/js/uikit.min.js','bower_components/uikit/js/components/lightbox.min.js']) //js
+    gulp.src(['bower_components/jquery/dist/jquery.min.js','bower_components/uikit/js/uikit.min.js']) //js
         .pipe(gulp.dest(path.build.js))
     gulp.src(['bower_components/uikit/css/uikit.min.css']) //uikit css
         .pipe(gulp.dest(path.build.css))
