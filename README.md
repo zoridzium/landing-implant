@@ -1,4 +1,4 @@
-<img>https://travis-ci.org/alfamed/landing-implant.svg?branch=master</img>
+<a href="https://travis-ci.org/alfamed/landing-implant.svg?branch=master"></a>
 #Этот файл еще на стадии разработки.
 Просьба с умом относится к его составлению!
 
