@@ -4,4 +4,4 @@ function out1212(){
     console.log(curTime);
 }
 
-out1212();
+out121a2();
