@@ -15,6 +15,7 @@ script:
   - gulp build
   - tree build
 before_deploy:
+    - bash
     - cd build
 deploy:
   provider: heroku
