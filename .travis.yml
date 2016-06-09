@@ -15,8 +15,8 @@ script:
   - gulp build
   - tree build
 before_deploy:
-    - ls
-    - cat TRAVIS_BUILD_DIR
+    - ls -la
+    - pwd
 deploy:
   provider: heroku
   api_key:
