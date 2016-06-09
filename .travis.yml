@@ -14,11 +14,10 @@ before_script:
 script:
   - gulp build
   - tree build
-before_install:
-  - cd build
 before_deploy:
     - ls -la
     - pwd
+    - cd ./build
 deploy:
   provider: heroku
   api_key:
