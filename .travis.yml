@@ -16,6 +16,7 @@ script:
   - tree build
 before_deploy:
     - ls
+    - cd build
 deploy:
   provider: heroku
   api_key:
