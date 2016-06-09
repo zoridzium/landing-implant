@@ -16,7 +16,7 @@ script:
   - tree build
 before_deploy:
     - ls
-    - cd build
+    - cat TRAVIS_BUILD_DIR
 deploy:
   provider: heroku
   api_key:
