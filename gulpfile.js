@@ -16,7 +16,9 @@ var gulp = require('gulp'),
     bower = require('gulp-bower'),
     mainBowerFiles = require('main-bower-files'),
     codeStylish = require('jshint-stylish'),
-    jshint = require("gulp-jshint"); //отслеживание ошибкок в js
+    inject = require('gulp-inject'),
+    jshint = require("gulp-jshint"),
+    coveralls = require('gulp-coveralls');
 
 var path = {
     build: { //Тут мы укажем куда складывать готовые после сборки файлы
@@ -122,6 +124,17 @@ gulp.task('bower:install', function() {
 gulp.task("main-bower-files:build", function(){
     return gulp.src(mainBowerFiles())
         .pipe(gulp.dest(path.src.lib))
+});
+
+gulp.task("inject:build", function(){
+    gulp.src('./src/index.html')
+        .pipe(inject(gulp.src(mainBowerFiles(), {read: false}), {name: 'bower'}))
+        .pipe(gulp.dest('./build'));
+});
+
+gulp.task("coveralls:build", function(){
+    gulp.src('test/coverage/**/lcov.info')
+        .pipe(coveralls());
 });
 
 gulp.task('build', [
