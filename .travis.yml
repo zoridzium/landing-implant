@@ -18,11 +18,10 @@ before_deploy:
     - ls -la
     - pwd
     - cd build
+    - git add build
 deploy:
   app: landing-implant
   provider: heroku
   api_key:
     secure: "26f01ce9-f060-47ec-b7f3-cb1a58438559"
   skip_cleanup: true
-  run:
-    - ls -la
