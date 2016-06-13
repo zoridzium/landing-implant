@@ -13,7 +13,7 @@ before_script:
   - bower install
 script:
   - gulp build
-  - tree
+  - tree build
 before_deploy:
     - ls -la
     - pwd
