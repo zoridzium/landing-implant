@@ -18,7 +18,7 @@ before_deploy:
     - ls -la
     - pwd
     - cd build
-    - git add build
+    - git add .
 deploy:
   app: landing-implant
   provider: heroku
