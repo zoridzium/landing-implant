@@ -15,10 +15,7 @@ script:
   - gulp build
   - tree build
 before_deploy:
-    - ls -la
-    - pwd
     - cd build
-    - git add .
 deploy:
   app: landing-implant
   provider: heroku
