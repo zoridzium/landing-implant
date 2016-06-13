@@ -17,7 +17,9 @@ script:
 before_deploy:
     - ls -la
     - pwd
+    - cd build
 deploy:
+  app: landing-implant
   provider: heroku
   api_key:
     secure: "26f01ce9-f060-47ec-b7f3-cb1a58438559"
