@@ -13,11 +13,10 @@ before_script:
   - bower install
 script:
   - gulp build
-  - tree build
+  - tree
 before_deploy:
     - ls -la
     - pwd
-    - cd ./build
 deploy:
   provider: heroku
   api_key:
