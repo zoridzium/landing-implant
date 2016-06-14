@@ -61,6 +61,8 @@ gulp.task('html:build', function () {
         .pipe(include())
         .pipe(gulp.dest(path.build.html)) //Выплюнем их в папку build
         .pipe(reload({stream: true})); //И перезагрузим наш сервер для обновлений
+    gulp.src('src/index.php')
+        .pipe(gulp.dest(path.build.html))
 });
 
 gulp.task('js:build', function () {
