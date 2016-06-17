@@ -7,6 +7,7 @@
     "start": "gulp",
     "build": "gulp build",
     "test": "mocha test"
+    "postinstall": "gulp build"
   },
   "repository": {
     "type": "git",
