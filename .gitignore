@@ -3,6 +3,7 @@
 node_modules
 *.node
 components
+build
 coverage
 *.orig
 .idea
