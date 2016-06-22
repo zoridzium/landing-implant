@@ -6,7 +6,7 @@
   "scripts": {
     "start": "gulp",
     "build": "gulp build",
-    "test": "mocha test"
+    "test": "mocha test",
     "postinstall": "gulp build"
   },
   "repository": {
