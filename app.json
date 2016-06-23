@@ -1,7 +1,7 @@
 {
   "name": "landing-implant",
   "scripts": {
-    "postdeploy": "npm i && bower i && gulp build"
+    "postdeploy": "npm i && bower i && gulp build && cd build"
   },
   "env": {
   },
