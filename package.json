@@ -6,7 +6,8 @@
   "scripts": {
     "start": "gulp",
     "build": "gulp build",
-    "test": "mocha test"
+    "test": "mocha test",
+    "postinstall": "gulp build"
   },
   "repository": {
     "type": "git",
@@ -22,7 +23,7 @@
   ],
   "author": "Alfamed Ukraine",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "bower": "^1.7.9",
     "browser-sync": "^2.12.5",
     "gulp": "^3.9.1",
@@ -43,9 +44,7 @@
     "jshint": "^2.9.2",
     "jshint-stylish": "^2.2.0",
     "main-bower-files": "^2.13.1",
+    "imagemin-pngquant": "^5.0.0",
     "rimraf": "^2.5.2"
-  },
-  "dependencies": {
-    "imagemin-pngquant": "^5.0.0"
   }
 }
