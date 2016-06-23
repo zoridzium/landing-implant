@@ -1,6 +1,9 @@
 {
   "name": "landing-implant",
   "version": "1.0.1",
+  "engines": {
+    "node": "4.2.4"
+  },
   "description": "This project contains proprietary code of landing",
   "main": "index.js",
   "scripts": {
