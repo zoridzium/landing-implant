@@ -1,6 +1,6 @@
 {
   "name": "landing-implant",
-  "success_url": "/welcome",
+  "success_url": "/build",
   "scripts": {
     "postdeploy": "npm i && bower i && gulp build && cd build"
   },
