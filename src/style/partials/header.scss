@@ -1,7 +1,28 @@
 .uk-navbar{
-background-color: #2D9FD8;
+  background-color: #2D9FD8;
 }
-
+.uk-navbar-nav>li>a{
+  font-family: MetaPro;
+  font-size: 16px;
+  color: #FFFFFF;
+  padding: 0 10px;
+  border: 1px solid #2D9FD8;
+}
+.uk-navbar-toggle{
+  color: #FFFFFF;
+}
+.uk-offcanvas-bar{
+  background-color: #2D9FD8;
+}
+.uk-nav>li>a{
+  font-family: MetaPro;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+.uk-nav-offcanvas>li>a:hover{
+  background-color: #f5f5f5 !important;
+  color:#000 !important;
+}
 // .uk-navbar-toggle{
 //   display: none;
 // }
