@@ -13,3 +13,20 @@
   height: 20px;
   vertical-align: text-top;
 }
+.margbotzero{
+  margin-bottom: 0;
+}
+.phoneNumber{
+    color: rgb(4, 144, 182);
+    font-size: 24px;
+    font-family: Roboto-Light;
+    cursor: default;
+}
+.linkCallBack{
+  color: #83C134;
+  text-decoration: none;
+}
+.linkCallBack:hover{
+  text-decoration: underline;
+  color: #428bca;
+}
