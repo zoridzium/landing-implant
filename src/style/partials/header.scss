@@ -2,7 +2,7 @@ body {
   font-size: 1em;
   text-align: center;
   height: 200px;
-  background-color: linear-gradient(to top, #fefcea, #f1da36);
+  background: linear-gradient(to top, #fefcea, #f1da36);
 }
 
 header {
@@ -42,5 +42,8 @@ header ul li a {
 
 .uk-navbar-nav, .uk-navbar-nav > li>a:hover, .uk-navbar-nav > li.uk-active > a {
   background-color: #2D9FD8;
-
+}
+.uk-navbar-nav > li{
+  display:block;
+  width:270px;
 }
