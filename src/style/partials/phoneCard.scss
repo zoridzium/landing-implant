@@ -1,6 +1,4 @@
-.margnForPhoneCard{
-margin-top: 40px;
-}
+
 .textFont{
   color: #666666;
   font-size: 20px;
@@ -39,19 +37,4 @@ margin-top: 40px;
 .showNumber>span:nth-child(3){
 font-weight: 700;
 font-style: italic;
-}
-@media (max-width:1219px) and (min-width:846px){
-  .margnForPhoneCard{
-  margin-top: 80px;
-  }
-}
-@media (max-width:846px){
-  .margnForPhoneCard{
-  margin-top: 120px;
-  }
-}
-@media (max-width:767px){
-  .margnForPhoneCard{
-  margin-top: 40px;
-  }
 }
