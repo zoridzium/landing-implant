@@ -2,10 +2,6 @@
   "name": "landing-implant",
   "success_url": "/build",
   "scripts": {
-    "compile": [
-      "bower install",
-      "gulp build"
-    ],
     "postdeploy": "npm i && bower i && gulp build"
   },
   "env": {
