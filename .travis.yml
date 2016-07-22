@@ -2,10 +2,10 @@ language: node_js
 notifications:
   email: false
   slack: lumident:Kkpxv0P1EHFvumqsHHfxKLv2
-cache:
-  directories:
-  - node_modules
-  - bower_components
+#cache:
+#  directories:
+#  - node_modules
+#  - bower_components
 node_js:
   - "4.2"
 before_script:
