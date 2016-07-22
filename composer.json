@@ -1,2 +1,6 @@
 {
+  "scripts": {
+    "post-update-cmd": "bower install",
+    "post-update-cmd": "gulp build"
+  }
 }
