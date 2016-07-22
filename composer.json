@@ -2,5 +2,8 @@
   "scripts": {
     "post-update-cmd": "bower install",
     "post-update-cmd": "gulp build"
+  },
+  "require": {
+    "php": ">=5.3.0"
   }
 }
