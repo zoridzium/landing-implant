@@ -2,15 +2,23 @@ language: node_js
 notifications:
   email: false
   slack: lumident:Kkpxv0P1EHFvumqsHHfxKLv2
+cache:
+  directories:
+  - node_modules
+  - bower_components
 node_js:
   - "4.2"
-deploy:
-  provider: heroku
-  api_key:
-    secure: "26f01ce9-f060-47ec-b7f3-cb1a58438559"
 before_script:
   - sudo apt-get install -y tree
-  - bower i
+  - bower install
 script:
   - gulp build
   - tree build
+before_deploy:
+    - cd build
+deploy:
+  app: landing-implant
+  provider: heroku
+  api_key:
+    secure: "26f01ce9-f060-47ec-b7f3-cb1a58438559"
+  skip_cleanup: true

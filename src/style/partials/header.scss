@@ -1,6 +1,7 @@
 body {
   font-size: 1em;
   text-align: center;
+  /*background-color: lightblue;*/
 }
 
 header {
@@ -8,37 +9,45 @@ header {
   color: darkred;
 }
 
-header {
+
+header .menuWrap{
   background-color: #2D9FD8;
+  width: 100%;
+}
+header .menuWrap .uk-navbar{
+  display: block;
+  margin: 0 auto;
+  background-color: #2D9FD8;
+  /*width: 100vw;*/
+  width: 1170px;
 }
 
-header ul {
-  margin: 0;
-  padding: 10px;
+.uk-navbar-nav>li{
+  text-align: center;
 }
-
-header ul li{
-  display: inline-block;
-}
-
-header ul li a {
+.uk-navbar-nav>li>a {
   color: white;
-  padding: 10px;
-  font-stretch: ultra-condensed;
-  font-weight: 600;
-  text-decoration: none;
   font-family: MetaPro;
-
+  font-size: 16px;
+  transition: 0.3s;
+  padding: 0 10px;
+}
+.uk-navbar-nav>li>a:hover{
+  transition: 0.3s;
+  text-decoration: underline;
+  color: white;
 }
 
-.content {
+/*.content {
   color: black;
   text-align: justify;
   max-width: 550px;
   display: inline-block;
-}
+}*/
 
 .uk-navbar-nav, .uk-navbar-nav > li>a:hover, .uk-navbar-nav > li.uk-active > a {
   background-color: #2D9FD8;
-
+}
+.titleBlock .logoWrap{
+  border: 1px solid red;
 }

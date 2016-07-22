@@ -17,7 +17,8 @@ var gulp = require('gulp'),
     mainBowerFiles = require('main-bower-files'),
     codeStylish = require('jshint-stylish'),
     inject = require('gulp-inject'),
-    jshint = require("gulp-jshint"); //отслеживание ошибкок в js
+    jshint = require("gulp-jshint"),
+    coveralls = require('gulp-coveralls');
 
 var path = {
     build: { //Тут мы укажем куда складывать готовые после сборки файлы
@@ -60,6 +61,8 @@ gulp.task('html:build', function () {
         .pipe(include())
         .pipe(gulp.dest(path.build.html)) //Выплюнем их в папку build
         .pipe(reload({stream: true})); //И перезагрузим наш сервер для обновлений
+    gulp.src('src/index.php')
+        .pipe(gulp.dest(path.build.html))
 });
 
 gulp.task('js:build', function () {
@@ -129,6 +132,11 @@ gulp.task("inject:build", function(){
     gulp.src('./src/index.html')
         .pipe(inject(gulp.src(mainBowerFiles(), {read: false}), {name: 'bower'}))
         .pipe(gulp.dest('./build'));
+});
+
+gulp.task("coveralls:build", function(){
+    gulp.src('test/coverage/**/lcov.info')
+        .pipe(coveralls());
 });
 
 gulp.task('build', [

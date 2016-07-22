@@ -1,9 +1,9 @@
 .DS_Store
 *.log
 node_modules
-build
 *.node
 components
+build
 coverage
 *.orig
 .idea
