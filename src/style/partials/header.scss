@@ -12,18 +12,13 @@ header {
 
 header .menuWrap{
   background-color: #2D9FD8;
-  width: 100%;
+  text-align:center;
 }
 header .menuWrap .uk-navbar{
-  display: block;
-  margin: 0 auto;
   background-color: #2D9FD8;
-  /*width: 100vw;*/
-  width: 1170px;
 }
+header .menuWrap .uk-navbar-nav{
 
-.uk-navbar-nav>li{
-  text-align: center;
 }
 .uk-navbar-nav>li>a {
   color: white;
@@ -37,7 +32,6 @@ header .menuWrap .uk-navbar{
   text-decoration: underline;
   color: white;
 }
-
 /*.content {
   color: black;
   text-align: justify;
@@ -45,11 +39,11 @@ header .menuWrap .uk-navbar{
   display: inline-block;
 }*/
 
-.uk-navbar-nav, .uk-navbar-nav > li>a:hover, .uk-navbar-nav > li.uk-active > a {
+/*.uk-navbar-nav, .uk-navbar-nav > li>a:hover, .uk-navbar-nav > li.uk-active > a {
   background-color: #2D9FD8;
-}
+}*/
 .titleBlock .logoWrap{
-  border: 1px solid red;
+
 }
 
 .titleBlock .phonesWrap .address{
@@ -58,6 +52,25 @@ header .menuWrap .uk-navbar{
   font-family: Roboto-Light;
   font-weight: bold;
   line-height: 1.5;
+}
+
+.titleBlock .phonesWrap .top-phone .showPhones{
+  color: rgb(4, 144, 182);
+  font-size: 24px;
+  font-family: Roboto-Light;
+  cursor: default;
+  font-style: italic;
+  display: block;
+}
+.titleBlock .phonesWrap .top-phone .showPhones:hover{
+  cursor: pointer;
+}
+.titleBlock .phonesWrap .top-phone .callback-btn{
+  color: #83C134;
+  text-decoration: underline;
+}
+.titleBlock .phonesWrap .top-phone .callback-btn:hover{
+  text-decoration: none;
 }
 
 .titleBlock .phonesWrap .address em{
