@@ -2,6 +2,10 @@
   "name": "landing-implant",
   "success_url": "/build",
   "scripts": {
+    "compile": [
+      "bower install",
+      "gulp build"
+    ],
     "postdeploy": "npm i && bower i && gulp build"
   },
   "env": {
@@ -16,7 +20,7 @@
   ],
   "buildpacks": [
     {
-      "url": "heroku/nodejs"
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs"
     },
     {
       "url": "heroku/php"
