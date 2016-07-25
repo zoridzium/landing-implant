@@ -1,0 +1,40 @@
+
+.textFont{
+  color: #666666;
+  font-size: 20px;
+  font-family: Roboto-Light;
+  font-weight: bold;
+  line-height: 1.5;
+}
+.uk-container>a>img,
+.uk-container>div{
+  margin-top: 10px;
+}
+.uk-align-medium-right>span>img{
+  height: 20px;
+  vertical-align: text-top;
+}
+.margbotzero{
+  margin-bottom: 0;
+}
+.showNumber{
+  color: rgb(4, 144, 182);
+  font-size: 24px;
+  font-family: Roboto-Light;
+  cursor: default;
+}
+.showNumber:hover{
+  text-decoration: underline;
+}
+.linkCallBack>a{
+  color: #83C134;
+  text-decoration: underline;
+  font-size: 14px;
+}
+.linkCallBack>a:hover{
+  text-decoration: none;
+}
+.showNumber>span:nth-child(3){
+font-weight: 700;
+font-style: italic;
+}
